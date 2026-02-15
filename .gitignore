@@ -1,0 +1,79 @@
+# =========================
+
+# IntelliJ IDEA
+
+# =========================
+
+.idea/
+*.iml
+*.iws
+out/
+build/
+
+# =========================
+
+# Java compiled files
+
+# =========================
+
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# =========================
+
+# Maven / Gradle (safe even if not used)
+
+# =========================
+
+target/
+.gradle/
+build/
+
+# =========================
+
+# OS files
+
+# =========================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+
+# Temporary / cache files
+
+# =========================
+
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# =========================
+
+# VS Code (if opened once)
+
+# =========================
+
+.vscode/
+
+# =========================
+
+# Environment files (future safe)
+
+# =========================
+
+.env
+.env.*
+
+# =========================
+
+# OneDrive auto-generated junk (important for your path)
+
+# =========================
+
+*.lnk
