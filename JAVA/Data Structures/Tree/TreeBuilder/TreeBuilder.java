@@ -1,7 +1,3 @@
-/*
-*  This is Tree Builder Class .
-* */
-
 import java.util.LinkedList;
 import java.util.Queue;
 

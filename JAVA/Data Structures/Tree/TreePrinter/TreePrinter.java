@@ -21,6 +21,26 @@ public class TreePrinter<T>{
         }
         System.out.println();
     }
+    public void BFSLevelByLevel(TreeNode<T> root){
+        System.out.println("BFS Order: ");
+        Queue<TreeNode<T>> Container = new LinkedList<>();
+        Container.add(root);
+        while(Container.size()>0){
+            int LevelSize = Container.size();
+            for(int i=0;i<LevelSize;i++){
+                TreeNode<T> Runner = Container.poll();
+                if(Runner==null) break;
+                System.out.print(Runner.val+" ");
+                if(Runner.left != null){
+                    Container.add(Runner.left);
+                }
+                if(Runner.right != null){
+                    Container.add(Runner.right);
+                }
+            }
+            System.out.println();
+        }
+    }
 
     public void BFSZigZacTraverse(TreeNode<T> root){
         System.out.println("BFS Zig-Zac Order: ");

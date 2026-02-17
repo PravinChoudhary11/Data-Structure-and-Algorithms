@@ -12,7 +12,7 @@ public class MergeSort {
             return;
         }
 
-        System.out.print("Enter Choice 1 if No Space else 2 for Extra Space: ");
+        System.out.print("Enter Choice 1 Classic 2 TopDown Extra Space 3 Itrative : ");
         int choice = sc.nextInt();
 
         int[] Array = ArrayBuilder.getArray(size);
@@ -24,6 +24,8 @@ public class MergeSort {
             ClassicMergeSort.mergeSort(Array,0,Array.length-1);
         }else if(choice==2){
             Array = MergeSortTopDown.MergeSort(Array,0,Array.length-1);
+        }else if(choice==3){
+            MergeSortBottomUp.MergeSort(Array);
         }else{
             System.out.println("Invalid Input");
             return;
